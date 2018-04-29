@@ -1,0 +1,23 @@
+{
+  "name": "cnblackj.github.io",
+  "version": "1.0.0",
+  "description": "::: tip This is a tip :::",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CNBlackJ/cnblackj.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CNBlackJ/cnblackj.github.io/issues"
+  },
+  "homepage": "https://github.com/CNBlackJ/cnblackj.github.io#readme",
+  "devDependencies": {
+    "vuepress": "^0.8.4"
+  }
+}

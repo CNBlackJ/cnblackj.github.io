@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+  - "lts/*"
+before_install:
+  - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version version-number
+  - export PATH="$HOME/.yarn/bin:$PATH"
+install:
+  - yarn
+  - vuepress build .
+  - git checkout master
+  - mv -r .vuepress/dist ./
+  - find . ! -name 'dist' -type f -exec rm -f {} +
+  - mv dist/* ./
+  - rm -r dist
+  - git add .
+  - git commit -m 'auto deploy by travis ci'
+  - git push -f git@github.com:CNBlackJ/cnblackj.github.io.git master:master
