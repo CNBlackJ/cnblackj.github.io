@@ -1,11 +1,22 @@
-language: node_js
-node_js:
-  - "lts/*"
-install:
+# language: node_js
+# node_js:
+#   - "lts/*"
+# install:
+#   - yarn
+#   - vuepress build .
+#   - cd .vuepress/dist
+#   - git init
+#   - git add -A
+#   - git commit -m 'auto deploy by travis ci'
+#   - git push -f git@github.com:CNBlackJ/cnblackj.github.io.git master:master
+before_deploy:
   - yarn
   - vuepress build .
-  - cd .vuepress/dist
-  - git init
-  - git add -A
-  - git commit -m 'auto deploy by travis ci'
-  - git push -f git@github.com:CNBlackJ/cnblackj.github.io.git master:master
+
+deploy:
+  provider: releases
+  api_key: "f92723b00b4416b4effc7b54c3762c32a83bc7ae"
+  file: .vuepress/dist/**/*
+  skip_cleanup: true
+  on:
+    tags: true
