@@ -4,15 +4,8 @@ node_js:
 install:
   - yarn
   - vuepress build .
-  - git status
-  - git add .
-  - git status
-  - git commit -m 'deploy commit'
-  - git checkout master
-  - mv -r .vuepress/dist ./
-  - find . ! -name 'dist' -type f -exec rm -f {} +
-  - mv dist/* ./
-  - rm -r dist
-  - git add .
+  - cd .vuepress/dist
+  - git init
+  - git add -A
   - git commit -m 'auto deploy by travis ci'
   - git push -f git@github.com:CNBlackJ/cnblackj.github.io.git master:master
