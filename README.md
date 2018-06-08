@@ -1,5 +1,5 @@
-# Hello VuewPress!
+# HelloWorld
 
-::: tip
-This is a tip
+:::tip
+这是一个tips!
 :::

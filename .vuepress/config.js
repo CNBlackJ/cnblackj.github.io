@@ -9,14 +9,14 @@ module.exports = {
 		],
     sidebar: [
       {
-        title: 'Group 1',
+        title: '文章',
         // collapsable: false,
         children: [
-          '/'
+          '/',
         ]
       },
       {
-        title: 'Group 2',
+        title: '项目',
         children: [ 
           '/page-a',
           '/page-b'
