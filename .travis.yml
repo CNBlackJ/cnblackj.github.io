@@ -1,11 +1,5 @@
-language: node_js
-node_js:
-  - "lts/*"
-install:
-  - yarn
-  - vuepress build .
-  - cd .vuepress/dist
-  - git init
-  - git add -A
-  - git commit -m 'auto deploy by travis ci'
-  - git push -f git@github.com:CNBlackJ/cnblackj.github.io.git master:master
+deploy:
+  provider: script
+  script: bash deploy.sh
+  on:
+    branch: vuePress
