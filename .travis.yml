@@ -8,11 +8,11 @@ cache:
 
 branches:
   only:
-  - master
+  - vuePress
 
 install:
   - npm install
-  - npm run generate
+  - npm run build
 
 script:
   - echo "Skipping tests"
