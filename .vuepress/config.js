@@ -1,6 +1,6 @@
 module.exports = {
 	title: 'Vinli',
-	description: 'Playground',
+  description: 'Playground',
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
@@ -13,6 +13,7 @@ module.exports = {
         // collapsable: false,
         children: [
           '/',
+          '/articles/05.md',
           '/articles/04.md',
           '/articles/03.md',
           '/articles/02.md',
