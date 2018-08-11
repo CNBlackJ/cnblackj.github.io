@@ -13,6 +13,7 @@ module.exports = {
         // collapsable: false,
         children: [
           '/',
+          '/articles/06.md',
           '/articles/05.md',
           '/articles/04.md',
           '/articles/03.md',
