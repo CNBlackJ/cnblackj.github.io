@@ -21,13 +21,6 @@ module.exports = {
           '/articles/02.md',
           '/articles/01.md'
         ]
-      },
-      {
-        title: '项目',
-        children: [ 
-          '/page-a',
-          '/page-b'
-        ]
       }
     ],
     // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
