@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vinli | node.js错误处理</title>
+    <meta name="description" content="Playground">
+    
+    
+    <link rel="preload" href="/assets/css/8.styles.38aff4fb.css" as="style"><link rel="preload" href="/assets/js/app.28642fcb.js" as="script"><link rel="preload" href="/assets/js/3.fc9a0bbe.js" as="script"><link rel="prefetch" href="/assets/js/0.13909051.js"><link rel="prefetch" href="/assets/js/1.dcc812ad.js"><link rel="prefetch" href="/assets/js/2.29e9b7a4.js"><link rel="prefetch" href="/assets/js/4.64e74b32.js"><link rel="prefetch" href="/assets/js/5.5756f11a.js"><link rel="prefetch" href="/assets/js/6.232a7389.js"><link rel="prefetch" href="/assets/js/7.e41e77bd.js">
+    <link rel="stylesheet" href="/assets/css/8.styles.38aff4fb.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><!----><span class="site-name">
+      Vinli
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/guide/" class="nav-link">Guide</a></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link">External</a></div><a href="https://github.com/cnblackj.github.io" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/guide/" class="nav-link">Guide</a></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link">External</a></div><a href="https://github.com/cnblackj.github.io" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav><ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading open"><span>文章</span><span class="arrow down"></span></p><ul class="sidebar-group-items"><li><a href="/" class="sidebar-link">介绍</a></li><li><a href="/articles/07.html" class="sidebar-link">阿里云Centos7.4安装Mongodb / Node.js / Git / Nginx</a></li><li><a href="/articles/06.html" class="sidebar-link">arduino驱动64*48的OLED屏幕</a></li><li><a href="/articles/05.html" class="sidebar-link">小程序从开发到部署(Mpvue + Vuex + MongoDB + Express)</a></li><li><a href="/articles/04.html" class="active sidebar-link">node.js错误处理</a></li><li><a href="/articles/03.html" class="sidebar-link">你在意过每天输入的网址是否区分大小写么？</a></li><li><a href="/articles/02.html" class="sidebar-link">Nodejs 数据类型</a></li><li><a href="/articles/01.html" class="sidebar-link">Gitlab+Docker部署CI服务器</a></li></ul></div></li></ul></div><div class="page"><div class="content"><h1 id="node-js错误处理"><a href="#node-js错误处理" aria-hidden="true" class="header-anchor">#</a> node.js错误处理</h1><p>在写Nodejs的时候，不太清晰关于错误要怎么处理，这里做了一个小实验，验证下自己的认知对不对：</p><ul><li>错误统一在一个地方进行处理即可</li><li>抛出错误，程序不会继续往下执行</li></ul><pre class="language-javascript"><code><span class="token comment">// case.js</span>
+<span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">bar</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">&quot;I am an error from foo!&quot;</span><span class="token punctuation">)</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'I am a log in foo.'</span><span class="token punctuation">)</span>
+  <span class="token keyword">return</span> <span class="token string">'foo'</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">bar</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">&quot;I am an error from bar!&quot;</span><span class="token punctuation">)</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'I am a log in bar.'</span><span class="token punctuation">)</span>
+  <span class="token keyword">return</span> <span class="token string">'bar'</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">try</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> t <span class="token operator">=</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'I am start!'</span><span class="token punctuation">)</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`t: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>t<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span> <span class="token keyword">catch</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre><p>以上实验代码返回的结果：</p><pre class="language-text"><code>Error: I am an error from bar!
+    at bar (/Users/black_j/Projects/nodejs/lesson/error_handler/case1.js:9:8)
+    at foo (/Users/black_j/Projects/nodejs/lesson/error_handler/case1.js:2:2)
+    at start (/Users/black_j/Projects/nodejs/lesson/error_handler/case1.js:16:13)
+    at Object.&lt;anonymous&gt; (/Users/black_j/Projects/nodejs/lesson/error_handler/case1.js:24:1)
+    at Module._compile (module.js:643:30)
+    at Object.Module._extensions..js (module.js:654:10)
+    at Module.load (module.js:556:32)
+    at tryModuleLoad (module.js:499:12)
+    at Function.Module._load (module.js:491:3)
+    at Function.Module.runMain (module.js:684:10)
+</code></pre><p>把foo()里面的bar()注释，返回结果：</p><pre class="language-text"><code>Error: I am an error from foo!
+    at foo (/Users/black_j/Projects/nodejs/lesson/error_handler/case1.js:3:8)
+    at start (/Users/black_j/Projects/nodejs/lesson/error_handler/case1.js:16:13)
+    at Object.&lt;anonymous&gt; (/Users/black_j/Projects/nodejs/lesson/error_handler/case1.js:24:1)
+    at Module._compile (module.js:643:30)
+    at Object.Module._extensions..js (module.js:654:10)
+    at Module.load (module.js:556:32)
+    at tryModuleLoad (module.js:499:12)
+    at Function.Module._load (module.js:491:3)
+    at Function.Module.runMain (module.js:684:10)
+    at startup (bootstrap_node.js:187:16)
+</code></pre><p>从结果可以看出验证了自己之前的想法。</p></div><div class="content edit-link"><a href="https://github.com/cnblackj.github.io/edit/master/docs/articles/04.md" target="_blank" rel="noopener noreferrer">纠正错误！</a><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div><div class="content page-nav"><p class="inner"><span class="prev">
+        ← <a href="/articles/05.html" class="prev">
+          小程序从开发到部署(Mpvue + Vuex + MongoDB + Express)
+        </a></span><span class="next"><a href="/articles/03.html">
+          你在意过每天输入的网址是否区分大小写么？
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/assets/js/3.fc9a0bbe.js" defer></script><script src="/assets/js/app.28642fcb.js" defer></script>
+  </body>
+</html>

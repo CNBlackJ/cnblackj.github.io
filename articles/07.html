@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vinli | 阿里云Centos7.4安装Mongodb / Node.js / Git / Nginx</title>
+    <meta name="description" content="Playground">
+    
+    
+    <link rel="preload" href="/assets/css/8.styles.38aff4fb.css" as="style"><link rel="preload" href="/assets/js/app.28642fcb.js" as="script"><link rel="preload" href="/assets/js/0.13909051.js" as="script"><link rel="prefetch" href="/assets/js/3.fc9a0bbe.js"><link rel="prefetch" href="/assets/js/1.dcc812ad.js"><link rel="prefetch" href="/assets/js/2.29e9b7a4.js"><link rel="prefetch" href="/assets/js/4.64e74b32.js"><link rel="prefetch" href="/assets/js/5.5756f11a.js"><link rel="prefetch" href="/assets/js/6.232a7389.js"><link rel="prefetch" href="/assets/js/7.e41e77bd.js">
+    <link rel="stylesheet" href="/assets/css/8.styles.38aff4fb.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><!----><span class="site-name">
+      Vinli
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/guide/" class="nav-link">Guide</a></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link">External</a></div><a href="https://github.com/cnblackj.github.io" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/guide/" class="nav-link">Guide</a></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link">External</a></div><a href="https://github.com/cnblackj.github.io" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav><ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading open"><span>文章</span><span class="arrow down"></span></p><ul class="sidebar-group-items"><li><a href="/" class="sidebar-link">介绍</a></li><li><a href="/articles/07.html" class="active sidebar-link">阿里云Centos7.4安装Mongodb / Node.js / Git / Nginx</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/articles/07.html#安装mongodb" class="sidebar-link">安装mongodb</a></li><li class="sidebar-sub-header"><a href="/articles/07.html#安装nodejs" class="sidebar-link">安装nodejs</a></li><li class="sidebar-sub-header"><a href="/articles/07.html#安装git" class="sidebar-link">安装Git</a></li><li class="sidebar-sub-header"><a href="/articles/07.html#安装nginx" class="sidebar-link">安装Nginx</a></li></ul></li><li><a href="/articles/06.html" class="sidebar-link">arduino驱动64*48的OLED屏幕</a></li><li><a href="/articles/05.html" class="sidebar-link">小程序从开发到部署(Mpvue + Vuex + MongoDB + Express)</a></li><li><a href="/articles/04.html" class="sidebar-link">node.js错误处理</a></li><li><a href="/articles/03.html" class="sidebar-link">你在意过每天输入的网址是否区分大小写么？</a></li><li><a href="/articles/02.html" class="sidebar-link">Nodejs 数据类型</a></li><li><a href="/articles/01.html" class="sidebar-link">Gitlab+Docker部署CI服务器</a></li></ul></div></li></ul></div><div class="page"><div class="content"><h1 id="阿里云centos7-4安装mongodb-node-js-git-nginx"><a href="#阿里云centos7-4安装mongodb-node-js-git-nginx" aria-hidden="true" class="header-anchor">#</a> 阿里云Centos7.4安装Mongodb / Node.js / Git / Nginx</h1><p>每次新开一台机器部署nodejs项目都会重复这样的部署操作，在这里简单记录一下，方便查阅。</p><h2 id="安装mongodb"><a href="#安装mongodb" aria-hidden="true" class="header-anchor">#</a> 安装mongodb</h2><p>主要参照官方提供的<a href="https://docs.mongodb.com/manual/tutorial/install-mongodb-on-red-hat/" target="_blank" rel="noopener noreferrer">Installation</a>就可以了，这里简单的记录下过程。</p><ul><li>创建资源管理文件</li></ul><pre class="language-text"><code>  # 文件：/etc/yum.repos.d/mongodb-org-4.0.repo 
+
+  # 内容：
+  [mongodb-org-4.0]
+  name=MongoDB Repository
+  baseurl=https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/4.0/x86_64/
+  gpgcheck=1
+  enabled=1
+  gpgkey=https://www.mongodb.org/static/pgp/server-4.0.asc
+</code></pre><ul><li>更新一下yum资源</li></ul><p><code>$ sudo yum update -y</code></p><ul><li>安装mongodb</li></ul><p><code>$ sudo yum install -y mongodb-org</code></p><ul><li>启动mongo服务</li></ul><p><code>$ service mongod restart</code></p><ul><li>检查是否成功运行</li></ul><p><code>$ mongd</code></p><p>成功显示连接成功的信息即表示安装启动成功了.</p><ul><li><p>配置外网可访问mongodb</p><ul><li><p>mongodb默认端口是27017，需要到阿里云管理后台里面的安全组管理，添加一个安全组规则，端口为：27017
+<img src="/assets/img/port_config.9740970f.jpeg" alt="port_config"></p></li><li><p>登陆到服务器修改mongo的配置
+<code>$ vim /etc/mongod.conf</code></p></li><li><p>找到bindIp</p></li></ul><pre class="language-text"><code># 找到如下内容，修改bindIp
+...
+net:
+  port: 27017
+  bindIp: 127.0.0.1
+...
+⬇️
+#这是更改后的
+...
+net:
+  port: 27017
+  bindIp: ::,0.0.0.0
+...
+</code></pre><ul><li>修改成功后，重新启动mongod</li></ul><p><code>$ service mongod restart</code></p><ul><li>验证是否成功
+回到自己的机器，用客户端或者mong连接命令进行连接，注意，这个时候的mongo是没有账户名和密码的，<a href="#">如何配置账户名密码</a>后续添加。</li></ul><pre class="language-text"><code># 所以不需要用户名和密码既可以登陆
+$ mongo yourserverip:27017
+</code></pre><p>成功显示连接的信息即配置外网访问成功。</p></li></ul><h2 id="安装nodejs"><a href="#安装nodejs" aria-hidden="true" class="header-anchor">#</a> 安装nodejs</h2><p>nodejs版本更新很快，有时候会存在同时使用多个版本的情况，所以可以用<a href="https://github.com/creationix/nvm" target="_blank" rel="noopener noreferrer">nvm</a>来管理安装nodejs，方便在需要的时候切换版本。</p><ul><li>安装脚本</li></ul><p><code>$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash</code></p><ul><li>更新一下source文件</li></ul><p><code>$ source ~/.bashrc</code></p><ul><li>检查是否安装成功</li></ul><p><code>$ nvm</code></p><p>成功显示help命令信息则安装成功，若失败参考<a href="https://github.com/creationix/nvm#install-script" target="_blank" rel="noopener noreferrer">官方安装问题解析</a>.</p><ul><li><p>nvm安装成功之后就可以安装任意版本的nodejs了</p><ul><li>安装最新版nodejs
+<code>$ nvm install node</code></li><li>安装指定版本，如8.4.0
+<code>$ nvm install 8.4.0</code></li></ul></li><li><p>检查node是否安装成功</p></li></ul><p><code>$ node -v</code>
+成功输出版本信息即安装成功。</p><h2 id="安装git"><a href="#安装git" aria-hidden="true" class="header-anchor">#</a> 安装Git</h2><p>同样可以参考官方<a href="https://git-scm.com/book/zh/v1/%E8%B5%B7%E6%AD%A5-%E5%AE%89%E8%A3%85-Git" target="_blank" rel="noopener noreferrer">installation</a>的安装教程，这个是有中文的，一步一步安装即可，这里简单总结一下。</p><ul><li>使用yum安装</li></ul><p><code>$ yum install git-core</code></p><ul><li>检查是否安装成功</li></ul><p><code>$ git --version</code></p><p>成功输出版本信息即安装成功，是不是很简单。当然也可以选择用<a href="https://git-scm.com/book/zh/v1/%E8%B5%B7%E6%AD%A5-%E5%AE%89%E8%A3%85-Git#%E4%BB%8E%E6%BA%90%E4%BB%A3%E7%A0%81%E5%AE%89%E8%A3%85" target="_blank" rel="noopener noreferrer">源码安装</a>.</p><h2 id="安装nginx"><a href="#安装nginx" aria-hidden="true" class="header-anchor">#</a> 安装Nginx</h2><p>nginx是一个异步框架的Web服务器，也可以用作反向代理，负载平衡器和HTTP缓存，得到广泛的使用。当然nodjs也是可以作为独立服务器运行，并且实现反向代理等功能。</p><ul><li>使用yum进行安装</li></ul><p><code>$ yum install nginx</code></p><ul><li><p>启动nginx
+<code>$ service nginx start</code></p><ul><li>其他一些命令：
+<ul><li>停止：<code>$ service nginx stop</code></li><li>重启：<code>$ service nginx restart</code></li><li>检查nginx配置文件：<code>$ nginx -t</code></li></ul></li></ul></li><li><p>检查是否安装成功
+到自己机器的浏览器输入服务器的ip，成功显示nginx默认页面即表示安装成功了</p><ul><li>如果不能成功访问，检查默认的80端口是否有开放；如是阿里与服务器，需要到安全组里配置80端口。</li></ul></li><li><p>配置反向代理
+有了反向代理，可以很轻松实现不同的域名指向不同的服务。
+如：机器同时启动了前端服务(mobile.example.com)、管理端服务(admin.example.com)、api服务(api.example.com)、Jenkins(jenkins.eample.com)等的时候，我们通过配置不同的域名，在nginx配置里面监听80端口，根据不同的域名实现请求转发。</p><ul><li>简单添加配置</li></ul><pre class="language-text"><code># 修改/etc/nginx/nginx.conf，在server同级的地方添加配置
+...
+  server {
+      listen       80;
+      server_name  mobile.example.com;
+      location / {
+          proxy_pass http://127.0.0.1:3001;
+      }
+  }
+  server {
+      listen       80;
+      server_name  admin.example.com;
+      location / {
+          proxy_pass http://127.0.0.1:3002;
+      }
+  }
+  server {
+      listen       80;
+      server_name  api.example.com;
+      location / {
+          proxy_pass http://127.0.0.1:3003;
+      }
+  }
+...
+</code></pre><ul><li>保存配置后使用<code>nginx -t</code>进行检查配置文件是否正确</li><li>使用<code>service nginx restart</code>重启</li><li>重启成功后，通过访问对应的域名既可请求对应的服务了；域名解析需要到对应的域名提供商那里设置。下面截图是阿里云里的域名解析设置。
+<img src="/assets/img/domain_config.900b6bd1.jpeg" alt="domain_config"></li></ul></li></ul></div><div class="content edit-link"><a href="https://github.com/cnblackj.github.io/edit/master/docs/articles/07.md" target="_blank" rel="noopener noreferrer">纠正错误！</a><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div><div class="content page-nav"><p class="inner"><span class="prev">
+        ← <a href="/" class="prev router-link-active">
+          介绍
+        </a></span><span class="next"><a href="/articles/06.html">
+          arduino驱动64*48的OLED屏幕
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/assets/js/0.13909051.js" defer></script><script src="/assets/js/app.28642fcb.js" defer></script>
+  </body>
+</html>

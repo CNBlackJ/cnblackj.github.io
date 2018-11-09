@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vinli | 小程序从开发到部署(Mpvue + Vuex + MongoDB + Express)</title>
+    <meta name="description" content="Playground">
+    
+    
+    <link rel="preload" href="/assets/css/8.styles.38aff4fb.css" as="style"><link rel="preload" href="/assets/js/app.28642fcb.js" as="script"><link rel="preload" href="/assets/js/2.29e9b7a4.js" as="script"><link rel="prefetch" href="/assets/js/3.fc9a0bbe.js"><link rel="prefetch" href="/assets/js/0.13909051.js"><link rel="prefetch" href="/assets/js/1.dcc812ad.js"><link rel="prefetch" href="/assets/js/4.64e74b32.js"><link rel="prefetch" href="/assets/js/5.5756f11a.js"><link rel="prefetch" href="/assets/js/6.232a7389.js"><link rel="prefetch" href="/assets/js/7.e41e77bd.js">
+    <link rel="stylesheet" href="/assets/css/8.styles.38aff4fb.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><!----><span class="site-name">
+      Vinli
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/guide/" class="nav-link">Guide</a></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link">External</a></div><a href="https://github.com/cnblackj.github.io" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/guide/" class="nav-link">Guide</a></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link">External</a></div><a href="https://github.com/cnblackj.github.io" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav><ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading open"><span>文章</span><span class="arrow down"></span></p><ul class="sidebar-group-items"><li><a href="/" class="sidebar-link">介绍</a></li><li><a href="/articles/07.html" class="sidebar-link">阿里云Centos7.4安装Mongodb / Node.js / Git / Nginx</a></li><li><a href="/articles/06.html" class="sidebar-link">arduino驱动64*48的OLED屏幕</a></li><li><a href="/articles/05.html" class="active sidebar-link">小程序从开发到部署(Mpvue + Vuex + MongoDB + Express)</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/articles/05.html#目录" class="sidebar-link">目录</a></li><li class="sidebar-sub-header"><a href="/articles/05.html#小程序开发" class="sidebar-link">小程序开发</a></li></ul></li><li><a href="/articles/04.html" class="sidebar-link">node.js错误处理</a></li><li><a href="/articles/03.html" class="sidebar-link">你在意过每天输入的网址是否区分大小写么？</a></li><li><a href="/articles/02.html" class="sidebar-link">Nodejs 数据类型</a></li><li><a href="/articles/01.html" class="sidebar-link">Gitlab+Docker部署CI服务器</a></li></ul></div></li></ul></div><div class="page"><div class="content"><h1 id="小程序从开发到部署-mpvue-vuex-mongodb-express"><a href="#小程序从开发到部署-mpvue-vuex-mongodb-express" aria-hidden="true" class="header-anchor">#</a> 小程序从开发到部署(Mpvue + Vuex + MongoDB + Express)</h1><p>随着小程序的持续发酵，用来开发小程序的框架也越来越多；从原生到WePY到Taro再到最近刚开源的Mpvue各有各的特点。
+简单看下上面提到的三个框架：</p><ul><li><a href="https://github.com/Tencent/wepy" target="_blank" rel="noopener noreferrer">WePY</a>: 让小程序支持组件化开发的框架
+<ul><li>官方出品</li><li>类Vue.js语法</li></ul></li><li><a href="https://github.com/NervJS/taro" target="_blank" rel="noopener noreferrer">Taro</a>: 一套遵循React语法规范的多端开发解决方案
+<ul><li><a href="https://aotu.io" target="_blank" rel="noopener noreferrer">凹凸实验室</a>出品</li><li>React语法</li><li>一套代码适配多端(小程序/H5/ReactNative...)</li></ul></li><li><a href="https://github.com/Meituan-Dianping/mpvue" target="_blank" rel="noopener noreferrer">Mpvue</a>: 是一个使用Vue.js开发小程序的前端框架
+<ul><li>美团出品</li><li>Vue.js语法</li></ul></li></ul><p>关于WePY和Mpvue更详细的对比可以看<a href="https://github.com/wuweijia/wuweijia.github.io/issues/32" target="_blank" rel="noopener noreferrer">这里</a></p><p>这里看下使用Mpvue做一个简单的TODOLIST小程序；从服务器、域名、SSL证书开始到提交线上版本发布小程序，一步一步把过程记录下来。</p><h2 id="目录"><a href="#目录" aria-hidden="true" class="header-anchor">#</a> 目录</h2><ul><li>微信公众平台</li><li>小程序开发
+<ul><li>mpvue</li><li>vuex</li><li>wecaht</li><li>request</li></ul></li><li>服务器</li><li>域名</li><li>SSL证书</li><li>Nginx</li><li>api服务</li></ul><h3 id="微信公众平台"><a href="#微信公众平台" aria-hidden="true" class="header-anchor">#</a> 微信公众平台</h3><blockquote><p>开发小程序的第一步，你需要拥有一个小程序帐号，通过这个帐号你就可以管理你的小程序。</p></blockquote><p>1、到微信公众平台上<a href="https://mp.weixin.qq.com/wxopen/waregister?action=step1" target="_blank" rel="noopener noreferrer">注册小程序</a>，获得小程序的AppID(小程序ID)、AppSecret(小程序密钥)等信息。详细步骤参考<a href="https://developers.weixin.qq.com/miniprogram/dev/" target="_blank" rel="noopener noreferrer">小程序开发文档|起步</a>。</p><p>2、有了小程序开发者账号之后，需要下载<a href="https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html?t=2018712" target="_blank" rel="noopener noreferrer">微信开发者工具</a>。</p><p>3、用微信开发者工具创建一个小程序项目，点击开发者工具的编译按钮即可以看到一个官方Demo啦。详细步骤参考<a href="https://developers.weixin.qq.com/miniprogram/dev/quickstart/basic/getting-started.html#%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%B0%8F%E7%A8%8B%E5%BA%8F" target="_blank" rel="noopener noreferrer">我的第一个小程序</a></p><h2 id="小程序开发"><a href="#小程序开发" aria-hidden="true" class="header-anchor">#</a> 小程序开发</h2><p>这里将采用Mpvue这个框架进行开发；结合Vuex进行状态管理，简单封装微信的内置api。</p><h3 id="mpvue"><a href="#mpvue" aria-hidden="true" class="header-anchor">#</a> Mpvue</h3><blockquote><p><a href="http://mpvue.com/" target="_blank" rel="noopener noreferrer">mpvue</a>是一个使用Vue.js开发小程序的前端框架。框架基于Vue.js核心，mpvue修改了Vue.js的runtime和compiler实现，使其可以运行在小程序环境中，从而为小程序开发引入了整套Vue.js开发体验。</p></blockquote><p>1、初始化项目</p><pre class="language-text"><code># 全局安装 vue-cli
+$ npm install --global vue-cli
+
+# 创建一个基于 mpvue-quickstart 模板的新项目: todolist
+$ vue init mpvue/mpvue-quickstart todolist
+
+# 安装依赖
+$ cd todolist
+$ npm install
+# 启动构建
+$ npm run dev
+</code></pre><p>成功启动后，打开微信开发者工具，引入项目(项目目录)即可看到第一个Mpvue小程序啦。</p><p>Mpvue示例小程序：
+<img src="/assets/img/mpvue_demo_index.6787c70f.png" alt="mpvue_demoe_index">
+下面这个Counter是Vuex的示例：
+<img src="/assets/img/mpvue_demo_counter.090fe6a5.png" alt="mpvue_demoe_counter"></p><h3 id="vuex"><a href="#vuex" aria-hidden="true" class="header-anchor">#</a> Vuex</h3><blockquote><p><a href="https://vuex.vuejs.org/zh/" target="_blank" rel="noopener noreferrer">Vuex</a> 是一个专为Vue.js应用程序开发的状态管理模式，它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化。</p></blockquote><p>Vuex的作用就是用来管理不同的组件之间的状态数据。Vuex并不是必须使用的，如果应用足够简单的话可以直接使用Prop进行数据传递会更加方便快捷。关于该什么时候使用vuex，可以看看<a href="https://vuex.vuejs.org/zh/#%E4%BB%80%E4%B9%88%E6%83%85%E5%86%B5%E4%B8%8B%E6%88%91%E5%BA%94%E8%AF%A5%E4%BD%BF%E7%94%A8-vuex%EF%BC%9F" target="_blank" rel="noopener noreferrer">官方的解释</a>。</p><p>Vuex的核心概念有：State、Getter、Mutation、Action、Module。</p><p>1、<a href="https://vuex.vuejs.org/zh/guide/state.html" target="_blank" rel="noopener noreferrer">State</a>
+state里面存储了所有状态数据，不同的module之间可以通过rootState获取数据。</p><pre class="language-javascript"><code><span class="token comment">// todo/store.js</span>
+<span class="token keyword">const</span> state <span class="token operator">=</span> <span class="token punctuation">{</span>
+  todoList<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  userInfo<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// done/store.js</span>
+<span class="token keyword">const</span> state <span class="token operator">=</span> <span class="token punctuation">{</span>
+  doneList<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> mutations <span class="token operator">=</span> <span class="token punctuation">{</span>  <span class="token comment">// mutation用来更新状态值</span>
+  <span class="token function">setDoneList</span><span class="token punctuation">(</span>state<span class="token punctuation">,</span> <span class="token punctuation">{</span> doneList <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    state<span class="token punctuation">.</span>doneList <span class="token operator">=</span> doneList
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> actions <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token function">listTodo</span><span class="token punctuation">(</span><span class="token punctuation">{</span> state<span class="token punctuation">,</span> commit<span class="token punctuation">,</span> rootState <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> todoList <span class="token operator">=</span> rootState<span class="token punctuation">.</span>todo<span class="token punctuation">.</span>todoList  <span class="token comment">// actions里面通过rootState即可访问到done/store.js的state了</span>
+    <span class="token keyword">const</span> doneList <span class="token operator">=</span> todoList<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span>todo <span class="token operator">=&gt;</span> todo<span class="token punctuation">.</span>status <span class="token operator">===</span> <span class="token number">2</span><span class="token punctuation">)</span>
+    <span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'setDoneList'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> doneList <span class="token punctuation">}</span><span class="token punctuation">)</span>  <span class="token comment">// 用commit来调用mutation里面的方法，进行更新状态</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><p>在<code>done/store.js</code>的actions里面通过rootState即可访问到所有的state了，如果要改变state里面的值，使用mutation进行操作。</p><p>2、<a href="https://vuex.vuejs.org/zh/guide/getters.html" target="_blank" rel="noopener noreferrer">Getter</a>
+getter可以简单的理解为用来做中间过滤操作的。</p><pre class="language-javascript"><code><span class="token comment">// todo/store.js</span>
+<span class="token keyword">const</span> state <span class="token operator">=</span> <span class="token punctuation">{</span>
+  todoList<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  userInfo<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> getters <span class="token operator">=</span> <span class="token punctuation">{</span>
+  doneTodos<span class="token punctuation">:</span> state <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> state<span class="token punctuation">.</span>todoList<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span>todo <span class="token operator">=&gt;</span> todo<span class="token punctuation">.</span>status <span class="token operator">===</span> <span class="token number">2</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><p>通过属性访问getter就可以调用了。</p><p>3、<a href="https://vuex.vuejs.org/zh/guide/mutations.html" target="_blank" rel="noopener noreferrer">Mutation</a>
+更改Vuex的store中的状态的唯一方法是提交mutation。也就是说要更改状态，必须是通提交mutation，但是要注意Mutation<a href="https://vuex.vuejs.org/zh/guide/mutations.html#mutation-%E5%BF%85%E9%A1%BB%E6%98%AF%E5%90%8C%E6%AD%A5%E5%87%BD%E6%95%B0" target="_blank" rel="noopener noreferrer">不支持异步函数</a>。</p><pre class="language-javascript"><code><span class="token comment">// todo/store.js</span>
+<span class="token keyword">const</span> state <span class="token operator">=</span> <span class="token punctuation">{</span>
+  todoList<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  userInfo<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> mutations <span class="token operator">=</span> <span class="token punctuation">{</span>
+  setTodoList<span class="token punctuation">:</span> <span class="token punctuation">(</span>state<span class="token punctuation">,</span> <span class="token punctuation">{</span> todoList <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    state<span class="token punctuation">.</span>todoList <span class="token operator">=</span> todoList
+    <span class="token comment">/*
+    // 在异步函数的回调中更新状态，让状态变得不可追踪，不推荐！
+    request.getTodoListAsync().then((todoList) =&gt; {
+      statte.todoList = todoList
+    })
+    */</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><p>因为Mutation不能是异步函数，所以我们可以简单的理解为Mutation就是用来更新数据状态；那要获得数据怎么办呢？接下来看看Action。</p><p>4、<a href="https://vuex.vuejs.org/zh/guide/actions.html" target="_blank" rel="noopener noreferrer">Action</a>
+Action类似Mutation，区别在于：</p><ul><li>Action不是直接改变状态，而是通过提交(commit)Mutation来改变状态</li><li>Action支持异步函数操作</li></ul><p>看起来好像Action跟Mutation有点混乱的感觉，其实不然；简单的说：</p><ul><li>mutation是更像状态(state)的唯一方式</li><li>mutation是不关心业务逻辑怎么处理的，只是关注状态(state)的变更</li><li>action的关注点在业务逻辑的处理，不关注状态(state)的变化</li><li>action可以同时分发(dispatch)多个mutation，更好地去实现业务逻辑</li></ul><p>参考stackoverflow: <a href="https://stackoverflow.com/questions/39299042/vuex-action-vs-mutations" target="_blank" rel="noopener noreferrer">vuex action vs mutation</a></p><pre class="language-javascript"><code><span class="token comment">// 还是这个例子</span>
+<span class="token comment">// done/store.js</span>
+<span class="token keyword">const</span> state <span class="token operator">=</span> <span class="token punctuation">{</span>
+  doneList<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> mutations <span class="token operator">=</span> <span class="token punctuation">{</span>  <span class="token comment">// mutation不支持异步函数，用来更新状态值</span>
+  <span class="token function">setDoneList</span><span class="token punctuation">(</span>state<span class="token punctuation">,</span> <span class="token punctuation">{</span> doneList <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    state<span class="token punctuation">.</span>doneList <span class="token operator">=</span> doneList
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> actions <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token comment">// action里面支持异步函数，进行逻辑处理</span>
+  <span class="token function">listTodo</span><span class="token punctuation">(</span><span class="token punctuation">{</span> state<span class="token punctuation">,</span> commit<span class="token punctuation">,</span> rootState <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> todoList <span class="token operator">=</span> rootState<span class="token punctuation">.</span>todo<span class="token punctuation">.</span>todoList
+    <span class="token keyword">const</span> doneList <span class="token operator">=</span> todoList<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span>todo <span class="token operator">=&gt;</span> todo<span class="token punctuation">.</span>status <span class="token operator">===</span> <span class="token number">2</span><span class="token punctuation">)</span>
+    <span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'setDoneList'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> doneList <span class="token punctuation">}</span><span class="token punctuation">)</span>  <span class="token comment">// 用commit来调用mutation里面的方法，进行更新状态</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><p>5、<a href="https://vuex.vuejs.org/zh/guide/modules.html" target="_blank" rel="noopener noreferrer">Module</a>
+模块化store，让每个模块都有自己的state/mutation/action/getter等，这样可以使得我们的应用更容易管理。上面提到的例子都是模块化后的代码。</p><pre class="language-javascript"><code><span class="token comment">// 官方示例</span>
+<span class="token keyword">const</span> moduleA <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token comment">// 模块A</span>
+  state<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token operator">...</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  mutations<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token operator">...</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  actions<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token operator">...</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  getters<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token operator">...</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> moduleB <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token comment">// 模块B</span>
+  state<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token operator">...</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  mutations<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token operator">...</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  actions<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token operator">...</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Vuex<span class="token punctuation">.</span>Store</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token comment">// 统一初始化</span>
+  modules<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    a<span class="token punctuation">:</span> moduleA<span class="token punctuation">,</span>
+    b<span class="token punctuation">:</span> moduleB
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>a <span class="token comment">// -&gt; moduleA 的状态</span>
+store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>b <span class="token comment">// -&gt; moduleB 的状态</span>
+</code></pre><blockquote><p>如果希望你的模块具有更高的封装度和复用性，你可以通过添加 namespaced: true 的方式使其成为带命名空间的模块。当模块被注册后，它的所有 getter、action 及 mutation 都会自动根据模块注册的路径调整命名。</p></blockquote><pre class="language-js"><code><span class="token comment">// 官方示例 改进版</span>
+<span class="token comment">// store/index.js</span>
+<span class="token keyword">const</span> moduleA <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token comment">// 模块A</span>
+  state<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> <span class="token string">''</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  mutations<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token function">setName</span> <span class="token punctuation">(</span>state<span class="token punctuation">,</span> <span class="token punctuation">{</span> name <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      state<span class="token punctuation">.</span>name <span class="token operator">=</span> name
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  actions<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token keyword">async</span> getName<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">{</span> state<span class="token punctuation">,</span> commit<span class="token punctuation">,</span> rootState <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> orderId <span class="token operator">=</span> rootState<span class="token punctuation">.</span>orderId
+      <span class="token keyword">const</span> name <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">getNameByOrderIdAsync</span><span class="token punctuation">(</span>orderId<span class="token punctuation">)</span>
+      <span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'setName'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> name <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  getters<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token operator">...</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> moduleB <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token comment">// 模块B</span>
+  state<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    orderId<span class="token punctuation">:</span> <span class="token string">''</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  mutations<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token operator">...</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  actions<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token operator">...</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Vuex<span class="token punctuation">.</span>Store</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token comment">// 统一初始化</span>
+  modules<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    a<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      namespaced<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token operator">...</span>moduleA
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    b<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      namespaced<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token operator">...</span>moduleB
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>a<span class="token punctuation">.</span>name    <span class="token comment">// -&gt; 模块A 状态里面的name</span>
+store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>b<span class="token punctuation">.</span>orderId <span class="token comment">// -&gt; 模块B 状态里面的orderId</span>
+
+<span class="token comment">// pages/demo/index.vue</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> mapState<span class="token punctuation">,</span> mapActions <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+<span class="token keyword">import</span> store <span class="token keyword">from</span> <span class="token string">'@/store/index'</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  store<span class="token punctuation">,</span>
+  computed<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span><span class="token function">mapState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      name<span class="token punctuation">:</span> state <span class="token operator">=&gt;</span> state<span class="token punctuation">.</span>a<span class="token punctuation">.</span>name<span class="token punctuation">,</span>
+      orderId<span class="token punctuation">:</span> state <span class="token operator">=&gt;</span> state<span class="token punctuation">.</span>b<span class="token punctuation">.</span>orderId
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">created</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'I am Groot!'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span><span class="token function">mapActions</span><span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>
+      <span class="token string">'getName'</span>
+    <span class="token punctuation">]</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><p>上面这个Vuex模块化例子包含了State、Action、Mutation、Namespaced、mapState、mapActions等常用方法；文章末尾也会提供示例项目源码，可以对比参照。</p><p>6、注意事项</p><ul><li><p>表单处理</p><ul><li>在严格模式中使用Vuex时，在属于Vuex的state上使用<code>v-model</code>指令会抛错，详细解决方案可以查看<a href="https://vuex.vuejs.org/zh/guide/forms.html" target="_blank" rel="noopener noreferrer">这里</a></li></ul></li><li><p>对象展开运算符: <code>...</code></p><ul><li>上面示例中常见的<code>...</code>是可以把目标对象展开到当前对象里面</li><li><a href="https://github.com/tc39/proposal-object-rest-spread" target="_blank" rel="noopener noreferrer">ECMAScripe提案</a></li></ul><pre class="language-js"><code><span class="token keyword">const</span> a <span class="token operator">=</span> <span class="token punctuation">{</span> x<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span> y<span class="token punctuation">:</span> <span class="token number">2</span> <span class="token punctuation">}</span>
+<span class="token keyword">const</span> b <span class="token operator">=</span> <span class="token punctuation">{</span> z<span class="token punctuation">:</span> <span class="token number">3</span> <span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> c <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token operator">...</span>a<span class="token punctuation">,</span> <span class="token operator">...</span>b <span class="token punctuation">}</span>
+<span class="token comment">// c = { x: 1, y: 2, z: 3 }</span>
+</code></pre></li><li><p>对象风格参数</p><ul><li>参数以对象形式传递</li><li>获取的时候也可以更简洁</li></ul></li></ul><pre class="language-js"><code><span class="token keyword">let</span> myName <span class="token operator">=</span> <span class="token string">''</span>
+<span class="token keyword">function</span> <span class="token function">setName</span> <span class="token punctuation">(</span><span class="token punctuation">{</span> name <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> myName <span class="token operator">=</span> name <span class="token punctuation">}</span>
+<span class="token keyword">function</span> <span class="token function">start</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token function">setName</span><span class="token punctuation">(</span><span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'small_white'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">}</span>
+</code></pre><ul><li>Vuex辅助函数的使用
+<ul><li>参考<a href="https://vuex.vuejs.org/zh/api/#%E7%BB%84%E4%BB%B6%E7%BB%91%E5%AE%9A%E7%9A%84%E8%BE%85%E5%8A%A9%E5%87%BD%E6%95%B0" target="_blank" rel="noopener noreferrer">API文档</a></li></ul></li></ul><h3 id="封装微信自带api"><a href="#封装微信自带api" aria-hidden="true" class="header-anchor">#</a> 封装微信自带API</h3><p>微信小程序提供了一些API用于获取用户信息等，这部分API我们会接触得较多，但是并不是Promise的API。所以我们可以简单的封装一下，使得更易用。</p><h4 id="微信小程序api一般为这样："><a href="#微信小程序api一般为这样：" aria-hidden="true" class="header-anchor">#</a> 微信小程序API一般为这样：</h4><pre class="language-js"><code>wx<span class="token punctuation">.</span><span class="token function">getUserInfo</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  success<span class="token punctuation">:</span> <span class="token punctuation">(</span>res<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  fail<span class="token punctuation">:</span> <span class="token punctuation">(</span>failRes<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre><h4 id="简单封装成一个promise函数："><a href="#简单封装成一个promise函数：" aria-hidden="true" class="header-anchor">#</a> 简单封装成一个Promise函数：</h4><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">wechat</span> <span class="token punctuation">{</span>
+  <span class="token keyword">static</span> <span class="token function">getUserInfo</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span>resolve<span class="token punctuation">,</span> reject<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      wx<span class="token punctuation">.</span><span class="token function">getUserInfo</span><span class="token punctuation">(</span><span class="token punctuation">{</span> success<span class="token punctuation">:</span> resolve<span class="token punctuation">,</span> fail<span class="token punctuation">:</span> reject <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><h3 id="封装http请求"><a href="#封装http请求" aria-hidden="true" class="header-anchor">#</a> 封装HTTP请求</h3><p>小程序要发起HTPP请求，可以通过自带的<code>wx.request()</code>，也可以使用第三方支持的HTPP请求包；这里使用了<a href="https://wendux.github.io/dist/#/doc/flyio/readme" target="_blank" rel="noopener noreferrer">fly.js</a>：一个支持所有JavaScript运行环境的基于Promise的、支持请求转发、强大的http请求库。</p><pre class="language-js"><code><span class="token comment">// request.js</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">async</span> <span class="token function">getTodoList</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> resp <span class="token operator">=</span> <span class="token keyword">await</span> fly<span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span><span class="token string">'https://www.yourdomain.com/api/todos'</span><span class="token punctuation">)</span>
+  <span class="token keyword">return</span> resp<span class="token punctuation">.</span>data
+<span class="token punctuation">}</span>
+</code></pre><p>通过这样封装，可以把http请求尽量与业务代码分离，同时提高代码的复用性。</p><p><strong>感谢您的耐心，看到了这里，是时候附上源码，动手实操一下啦:</strong><strong><a href="https://github.com/CNBlackJ/todolist" target="_blank" rel="noopener noreferrer">todoList</a></strong></p><hr><p>当你把程序写好了，在本地机器可以成功运行了，这时候可以想想如何放到服务器，让大家可以用。</p></div><div class="content edit-link"><a href="https://github.com/cnblackj.github.io/edit/master/docs/articles/05.md" target="_blank" rel="noopener noreferrer">纠正错误！</a><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div><div class="content page-nav"><p class="inner"><span class="prev">
+        ← <a href="/articles/06.html" class="prev">
+          arduino驱动64*48的OLED屏幕
+        </a></span><span class="next"><a href="/articles/04.html">
+          node.js错误处理
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/assets/js/2.29e9b7a4.js" defer></script><script src="/assets/js/app.28642fcb.js" defer></script>
+  </body>
+</html>
